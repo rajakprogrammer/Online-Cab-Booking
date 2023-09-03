@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins' sans-serif;
+}
+.header_section {
+    width: 100%;
+    float: left;
+    background-color: #1a1a1a;
+    height: auto;
+    padding-top: 10px;
+    padding-right: 45px;
+    padding-bottom: 5px;
+    position: fixed;
+    z-index: 01;
+}
+.logo {
+    width: 50px;
+    float: left;
+    text-align: center;
+}
+
+.menu_text {
+    float: right;
+    width: auto;
+}
+
+.menu_text ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu_text li {
+    float: left;
+    padding-right: 75px;
+    font-size: 20px;
+    color: #ffffff;
+    padding:  10px 10px 10px 90px;
+    display: inline;
+}
+.menu_text li a {
+    color: #ffffff;
+}
+
+.menu_text :hover {  
+    color: yellow;
+}
+
+.menu_text a li::before{
+    content: '';
+    display:block ;
+    height: 2px;
+    width: 0%;
+    background-color: yellow;
+    transition: all ease-in-out 250ms;
+    top: 0px;
+    }
+    
+    .menu_text a li:hover::before
+    {
+        width: 100%;
+       
+    }
+
+.nomask{
+    size: 10px;
+    color:red;
+    background-color: aqua;
+}
+
+
+.toggle_menu {
+    top: -3px;
+    position: relative;
+    left: 15px;
+}
+
+.banner_section{
+     width: 100%;
+     float: left;
+     background-color: #1a1a1a;
+     height: auto;
+     padding-top: 90px;
+}
+
+.book_now {
+    width: 70%;
+    float: right;
+    background-color: #f8ca11;
+    height: auto;
+    padding: 10px;
+}
+
+.book_text{
+     width: 100%;
+     float: left;
+     font-size: 40px;
+     color: #fbfaf6;
+     text-align: center;
+}
+.call_text{
+     width: 100%;
+     float: left;
+     font-size: 40px;
+     color: #1a1a1a;
+     text-align: center;
+}
+
+.image_1 {
+    width: 80%;
+    float: right;
+    margin-top: 50px;
+}
+
+.booking_text{
+     width: 100%;
+     float: left;
+     font-size: 26px;
+     color: #fbfaf6;
+     text-align: center;
+}
+
+.contact_bg {
+    width: 100%;
+    float: left;
+    padding-top: 0;
+    padding-bottom: 30px;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+}
+.request_text {
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    color: #000;
+    border-bottom: 0px solid#49bcfe;
+    padding-top: 20PX;
+    text-align: center;
+}
+
+.email-bt {
+   
+    background:rgb(207, 207, 230);
+    border-bottom: 1px solid #fffcf4;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: #000;
+    width: 50%;
+    height: 30px;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+}
+.send_bt a{
+    width: 20%;
+    float:right;
+    background-color: #353433;
+    color: #fefefe;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.send_bt a{ color: #fefefe; }
+.send_bt a:hover {
+    color: #000;
+    background: #f8ca11  ;
+}
+
+.taxis_section{
+    width: 100%;
+    float: left;
+    background-color: #212a2d;
+    height: auto;
+    margin-top: 90px;
+    padding-bottom: 50px;
+}
+
+.our_text{
+     width: 100%;
+     float: left;
+     text-align: center;
+     font-size: 50px;
+     color: #fefefe;
+     font-weight: bold;
+}
+
+.taxis_section_2 {
+    width: 100%;
+    cursor: pointer;
+}
+
+.taxi_main{
+     width: 350px;
+     float: left;
+     background-color: #fefefe;
+     height: auto;
+    margin: 70px;
+    transition: 0.5s;
+}
+.taxi_main:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 4px 4px black;
+}
+.round_1 {
+    width: 21%;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #fefefe;
+    height: 70px;
+    background: #f8ca11;
+    display: block;
+    text-align: center;
+    border-radius: 60px;
+    padding-top: 12px;
+    position: relative;
+    top: -35px;
+}
+.carol_text{
+     width: 100%;
+     float: left;
+     text-align: center;
+     color: #2b3436;
+     font-size: 24px;
+}
+
+.reader_text{
+     width: 100%;
+     float: left;
+     text-align: center;
+     color: #2b3436;
+     font-size: 20px;
+     margin-left: 0px;
+}
+input.email-bt::placeholder {
+    color: #000;
+}
+
+.images_2{
+     width: 100%;
+     float: left;
+     text-align: center;
+}
+.box{
+    /* background-color: black; */
+    /* color: white; */
+    color: #000;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    margin:30px;
+    padding: 20px;
+    font-size: 25px;
+    /* border-color: rgb(189, 178, 80); */
+}
+.s_box
+{
+    text-align: center;
+    margin: 20px 100px 20px 100px;
+    font-size: 45px;
+    color: rgb(199, 149, 48);
+    font-weight: bold;
+}
+
+
+
+/* .icons
+{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+}
+i{
+    height: 130px;
+    width: 130px;
+    margin: 50px;
+}
+.inside{
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: -1em;
+}    */
+.direction{
+    margin: 10px;
+    width: 1500px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: #000 1rem solid;
+}
+iframe
+{
+    width: 90%;
+    filter: invert(100%);
+}
+footer{
+    margin: 20px;
+    width: 100%;
+   background-color:#23282a;
+   color: white;
+   padding-bottom: 30px;
+    
+}
+table{
+    text-align: left;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 20px;
+    
+    font-size: 20px;
+    
+}
+th{
+    font-size: 30px;
+}
+td{
+    text-decoration: none;
+    text-align: left;
+}
+.column2{
+    padding-bottom:100px;
+    text-align: center;
+}
+.column3{
+    padding-bottom: 70px;
+}
+i{
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.menu_bar li{
+    display: inline-block;
+    position: relative;
+   padding: 10px;
+   font-size: 15px;
+    text-align: center;
+}
+.menu_bar li a::after{
+    content: '';
+    display:block ;
+    height: 2px;
+    width: 0%;
+    background-color: black;
+    transition: all ease-in-out 250ms;
+    top: 0px;
+    }
+    
+    .menu_bar li a:hover::after
+    {
+        width: 100%;
+       
+    }
+.bar{
+    background-color: #23282a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer1{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+

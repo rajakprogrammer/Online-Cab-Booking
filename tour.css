@@ -1,0 +1,39 @@
+*{
+    margin:2px;
+    padding: 2px;
+}
+
+
+body{
+    background-color:navajowhite;
+    color: green;
+}
+
+.heading{
+    background-color: solid black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #p1{
+    color: green;
+
+  }
+
+  table{
+    margin: 30px;
+    padding: auto;
+    border: 2px solid green;
+  }
+
+  h2{
+    text-decoration: underline;
+  }
+  .footer {
+    background-color: #151414;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    
+  }

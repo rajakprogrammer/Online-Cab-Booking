@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="login.css">
+    <title>Login page</title>
+</head>
+<body>
+    <div class="container">
+        <video  autoplay loop muted>
+            <source src="Mountain Road - 101098.mp4" type="video/mp4">
+        </video>
+        <div class="box">
+            <div class="logo"></div>
+            <div class="login">
+                <form action="Online_cabBooking.html" onsubmit="return verifyPassword()">
+                    <input type="text" class="username" name="username" placeholder="Username" required>
+                    <input type="password" class="pass" name="password" placeholder="Password" required>
+                    <input type="submit" value="Sign in" class="btn" >
+                </form>
+                <div class="reg">
+                    <a href="register.html">Click here to register</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+         function verifyPassword() {
+           alert("You have logged in to ULOAX car booking");
+        }
+    </script>
+</body>
+</html>

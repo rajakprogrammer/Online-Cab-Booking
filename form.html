@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .container {
+            margin: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            background-color: black;
+            width: 60%;
+        }
+
+        h2 {
+            background-color: grey;
+            font-size: 30px;
+        }
+
+        h3 {
+            background-color: rgb(198, 198, 198);
+            font-size: 30px;
+        }
+
+        .box1 {
+            margin: 20px;
+            padding: 30px;
+            font-size: 20px;
+        }
+
+        .box1 input {
+            padding: 20px;
+        }
+
+        select {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        .submit1 {
+            text-align: center;
+            margin-left: 600px;
+            width: 12em;
+            padding: .8em;
+            font-size: 20px;
+            text-align: center;
+            border: none;
+            overflow: hidden;
+            font-weight: bold;
+            font-size: large;
+            background-color: #415c77;
+        }
+
+        .submit1:hover{
+            
+            background-color: #6189b0;
+        }
+
+        ::placeholder {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Book your Taxi Online</h1>
+        <form action="payment.html">
+            <h2>Ride details</h2>
+            <div class="box1">
+                Pick Time <input type="time" class="Pick Time" size="70px"><br><br><br>
+                Pickup location <a
+                    href="https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.771045,77.5931899,9.22z/data=!4m5!3m4!1s0x3bae1670c9b44e6d:0xf8dfc3e8517e4fe0!8m2!3d12.9715987!4d77.5945627?hl=en">Use
+                    my location</a> <br>
+                <td><input type="text" size="50px" placeholder="Enter location"><br><br><br>
+                    Drop-off Location <br>
+                    <input type="text" size="50px" placeholder="Enter location"><br><br><br>
+                    Name <br><input type="text" size="50px" placeholder="Enter your Name"><br><br><br>
+                    Contact No.<br><input type="text" size="50px" placeholder="+91(123456789)"><br><br><br>
+                    Email <br><input type="email" size="50px" placeholder="abc.@gmail.com"><br><br><br>
+                    Transfer Type <br>
+                    <select name="Transfer" id="Transfer">
+                        <option value="One way">One way</option>
+                        <option value="Return">Return</option>
+                        <option value="New ride">New ride</option>
+                    </select>
+                    <br><br><br>
+                    <h3>
+                        No. of passengers
+                    </h3>
+                    <br>
+                    Adults
+                    <input type="number" placeholder="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Childern
+                    <input type="number" placeholder="1"><br><br><br>
+                    <h3>
+                        Extra Options
+                    </h3><br>
+                    <select name="Extra Options" id="Extra Options">
+                        <option value="1 hour">1 hour</option>
+                        <option value="2 hours">2 hours</option>
+                        <option value="3 hours">3 hours</option>
+                        <option value="4 hours">4 hours</option>
+                        <option value="5 hours">5 hours</option>
+                        <option value="6 hours">6 hours</option>
+                    </select><br>
+                    <input type="submit" value="Proceed for payment" class="submit1">
+
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

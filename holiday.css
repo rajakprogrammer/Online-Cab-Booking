@@ -1,0 +1,70 @@
+*{
+  margin: 10px;
+  padding: 10px;
+  
+}
+.box1{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+
+}
+body{
+  background-color:rgb(249, 249, 201);
+}
+li{
+  font-size: 25px;
+}
+
+  
+  h1 {
+    color: rgb(5, 6, 26);
+  }
+  h2 {
+    color: rgb(64, 38, 38);
+  }
+  .places{
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+  }
+  .place{
+    margin: 50px;
+    float: left;
+    width: 390px;
+    transition: 0.5s;
+  }
+  .places :hover{
+    transform: scale(1.06);
+  }
+  .place img{
+      width: 100%;
+      height: auto;
+   
+  }
+  .desc{
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  a
+  {
+    text-decoration: none;
+    background-color: yellow;
+    color: black;
+    border: black solid;
+  }
+  .box2{
+    
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .list{
+        font-family: san-serif;  
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+
+        }
+
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            padding-left: 400px;
+            font-size: 50px;
+            color: rgb(240, 209, 32);
+            background-color: rgba(0, 0, 0, 0.79);
+            width: 100%;
+            position: fixed;
+            
+        }
+
+
+        .box {
+            background-image: url("img10.jpg");
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            object-fit: cover;
+            background-repeat: no-repeat;
+        }
+
+        .box1 {
+            /* display: block; */
+            margin-left: 900px;
+            font-size: 20px;
+            width: 25%;
+            height: 33em;
+            position: sticky;
+            margin-top: 0px;
+            display: flex;
+            padding: 5em 6em 0 6em;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            overflow: hidden;
+            background-color: rgba(168, 180, 193, 0.25);
+            backdrop-filter: blur(12px);
+        }
+
+        .box1 input {
+            padding: 15px;
+            border-radius: 20px;
+            border: solid black;
+          
+        }
+
+        ::placeholder {
+            color: rgb(113, 113, 113);
+            font-size: 17px;
+            padding-left: 15px;
+        }
+
+        .btn {
+            margin-left: 1em;
+            width: 12em;
+            padding-left: 8em;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            overflow: hidden;
+            font-weight: bold;
+            border-radius: 5px;
+            background-color: rgb(51, 48, 45);
+            color: rgb(249, 244, 244);
+            transition: 1s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            text-decoration: underline;
+            background-color: rgb(135, 128, 119);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            <div class="margin">
+                <h1>Create your account</h1>
+            </div>
+
+            <form action="Online_cabBooking.html" onsubmit="return verifyPassword()">
+
+                <div class="box1">
+
+                    Name <br><input type="text" size="50px" placeholder="Enter your Name" required><br><br>
+                    Mobile No.<br><input type="text" size="50px" placeholder="+91(123456789)" required><br><br>
+                    Email <br><input type="email" size="50px" placeholder="abc.@gmai.com" required><br><br>
+                    Password* <br>
+                    <input type="password" size="50px" required id="pswd" value=""><span id="message" style="color:red">
+                    </span>
+                    <br><br>
+                    Confirm Password* <br>
+                    <input type="password" size="50px" required id="pswd1" value=""><span id="message1" style="color:red"></span> <br>
+                    <!-- <button class="button">Create an account</button> -->
+                    <input type="submit" value="Create an account" class="btn">
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script>
+        function verifyPassword() {
+            var pw = document.getElementById("pswd").value;
+            var ps = document.getElementById("pswd1").value;
+            //check empty password field
+            if (pw == "") {
+                document.getElementById("message").innerHTML = "**Fill the password please!";
+                return false;
+            }
+
+            //minimum password length validation
+            if (pw.length < 8) {
+                document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";
+                return false;
+            }
+
+            //maximum length of password validation
+            if (pw.length > 15) {
+                document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";
+                return false;
+            } if(pw==ps) {
+                alert("Congratulations!! Your account has been created");
+            }
+            else
+            {
+                // alert("Password is incorrect");
+                document.getElementById("message1").innerHTML = "**Password is incorrect ";
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
